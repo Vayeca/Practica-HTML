@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UFT-8">
+    <meta http.equiv="X-compatible"  content="IE=edge">
+    <meta name="viewport" content="with=device-with, initial-scale=1.0">
+    <tittle>form</tittle>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <p>Los campos obligatorios se marcan con un (*)</p>
+    
+    <form action="/respuestas-form.html" method="post">
+        <div>
+            <label for="name" >Nombre*</label>
+            <input required id="name" name= "name" type="text">
+        </div>
+        <div>
+            <label for="name" >Apellido*</label>
+            <input required id="name" name= "name" type="text">
+        </div>
+        <div>
+        
+            <label for="telefono" >Teléfono*</label>
+            <input required id="telefono" name= "telefono" type="telefono" pattern="[0-9]+"
+            placeholder ="(555) 5555555">
+        </div>
+        <div>
+            <label for="mail">E-mail*</label>
+            <input required id="mail" name="email" type="email">
+        </div>
+        <div>
+            <label for="password">Password*</label>
+            <input required id="password" name="password" type="password">
+        </div>
+        <fieldset>
+            <legend>¿Cómo me conociste? Selecciona una o varias*</legend>
+            
+            <label for="Universidad">Universidad</label>
+            <input id="Universidad" type="checkbox" name="choice" value="Universidad">
+            
+            <label for="Keepcoding">Keepcoding kick-off</label>
+            <input id="Keepcoding" type="checkbox" name="choice" value="Keepcoding">
+            
+            <label for="Colegio">Colegio</label>
+            <input id="Colegio" type="checkbox" name="choice" value="Colegio">
+
+            <label for="Github">Github</label>
+            <input id="Github" type="checkbox" name="choice"value="Github">
+
+        </fieldset>
+        
+        <div> 
+            <label for="usernameGIT">Usernamen GIT*</label>
+            <input required id="usernameGIT" name="usernameGIT" type="usernameGIT" pattern="@[a-z0-9.-]+"
+            placeholder ="@username">
+        </div>
+        <div>
+
+            <label for="Description">Descripción (max 180 caracteres)*</label>
+            <textarea required id="Description" name="Description" type="Description" maxlength="180">
+            </textarea>
+        </div>
+        <input type="submit" value="Guardar"/>
+    </form>
+</body>
+</html>
